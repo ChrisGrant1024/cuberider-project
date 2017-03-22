@@ -60,7 +60,7 @@ while i < readings:
 
 	file.write("Difference from previous reading: \n")
 
-	if prevGyroDataX == 0 && prevGyroDataY == 0 && prevGyroDataZ == 0:
+	if prevGyroDataX == 0 and prevGyroDataY == 0 and prevGyroDataZ == 0:
 		prevGyroDataX = gyroscopeData[0]
 		prevGyroDataY = gyroscopeData[1]
 		prevGyroDataZ = gyroscopeData[2]
@@ -80,7 +80,7 @@ while i < readings:
 		else:
 			file.write("Difference Z: " + str(gyroscopeData[2] - prevGyroDataZ))
 
-	if avgGyroDataX == 0 && avgGyroDataY == 0 && avgGyroDataZ == 0:
+	if avgGyroDataX == 0 and avgGyroDataY == 0 and avgGyroDataZ == 0:
 		avgGyroDataX = str(gyroscopeData[0])
 		avgGyroDataY = str(gyroscopeData[1])
 		avgGyroDataZ = str(gyroscopeData[2])
@@ -89,7 +89,7 @@ while i < readings:
 		avgGyroDataY = (avgGyroDataY + gyroscopeData[1]) / 2
 		avgGyroDataZ = (avgGyroDataZ + gyroscopeData[2]) / 2
 
-	if lowGyroDataX == 0 && lowGyroDataY == 0 && lowGyroDataZ == 0:
+	if lowGyroDataX == 0 and lowGyroDataY == 0 and lowGyroDataZ == 0:
 		lowGyroDataX = gyroscopeData[0]
 		lowGyroDataY = gyroscopeData[1]
 		lowGyroDataZ = gyroscopeData[2]
@@ -103,7 +103,7 @@ while i < readings:
 	if lowGyroDataZ > gyroscopeData[2]:
 		lowGyroDataZ = gyroscopeData[2]
 
-	if highGyroDataX == 0 && highGyroDataY == 0 && highGyroDataZ == 0:
+	if highGyroDataX == 0 and highGyroDataY == 0 and highGyroDataZ == 0:
 		highGyroDataX = gyroscopeData[0]
 		highGyroDataY = gyroscopeData[1]
 		highGyroDataZ = gyroscopeData[2]
